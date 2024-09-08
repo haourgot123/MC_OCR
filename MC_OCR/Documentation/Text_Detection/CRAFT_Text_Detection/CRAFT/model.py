@@ -133,7 +133,7 @@ class CRAFTModel:
         if len(boxes)>0:
             boxes = boxes.astype(np.int32).tolist()
             for box in boxes:
-                boxes_final.append([box[0], box[2]])
+                boxes_final.append(box)
 
         return boxes_final
     
